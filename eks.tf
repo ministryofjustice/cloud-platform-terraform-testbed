@@ -43,8 +43,8 @@ module "eks" {
         Domain    = local.vpc_base_domain_name
       }
       additional_tags = {
-        default_ng                                        = "true"
-        "k8s.io/cluster-autoscaler/enabled"               = ""
+        default_ng                                    = "true"
+        "k8s.io/cluster-autoscaler/enabled"           = ""
         "k8s.io/cluster-autoscaler/${local.vpc_name}" = ""
       }
     }
